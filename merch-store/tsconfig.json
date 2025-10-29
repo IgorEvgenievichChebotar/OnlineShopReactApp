@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": ["DOM", "DOM.Iterable", "ES2021"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": "src",
+    "paths": {
+      "@app": ["app/index.ts"],
+      "@app/*": ["app/*"],
+      "@pages/*": ["pages/*"],
+      "@widgets/*": ["widgets/*"],
+      "@features/*": ["features/*"],
+      "@entities/*": ["entities/*"],
+      "@shared/*": ["shared/*"]
+    },
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "types": ["webpack-env", "node"]
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
